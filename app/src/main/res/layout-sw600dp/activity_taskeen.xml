@@ -1,0 +1,460 @@
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg"
+    tools:context=".DartboardActivity" >
+
+    <RelativeLayout
+        android:id="@+id/game_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/buttons"
+        android:layout_alignParentTop="true"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin" >
+
+
+
+        <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:text="نوع الحافلة"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/FontColorLogin"
+                android:textSize="20sp" />
+
+
+
+        <Spinner
+                android:id="@+id/spinner0"
+                android:layout_width="250dp"
+                android:layout_height="45dp"
+                android:background="@color/White"
+                android:textColor="@color/FontColorLogin"
+                android:textSize="15sp"
+
+                android:gravity="center"
+                android:textStyle="bold"
+                android:layout_marginRight="45dp"
+                android:layout_toLeftOf="@+id/textView1"/>
+
+        <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView1"
+                android:layout_alignRight="@+id/textView1"
+                android:text="رقم الشركه"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/FontColorLogin"
+                android:textSize="20sp" />
+
+
+        <EditText
+                android:id="@+id/editText1"
+                android:layout_width="250dp"
+                android:layout_height="45dp"
+                android:layout_alignLeft="@+id/spinner0"
+                android:layout_below="@+id/spinner0"
+
+                android:layout_alignBaseline="@+id/textView2"
+                android:ems="8"
+                android:hint="رقم الشركة"
+                android:inputType="number"
+
+                android:textColor="@color/FontColorLogin"
+                android:textCursorDrawable="@null"
+                android:textSize="20sp" />
+
+
+        <Button
+                android:id="@+id/search1"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_alignBaseline="@+id/editText1"
+
+                android:layout_toLeftOf="@+id/editText1"
+                android:background="@drawable/search"
+                android:textColor="@color/FontColorLogin" />
+
+
+        <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@+id/textView1"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/textView2"
+                android:text="رقم الهوية"
+                android:textColor="@color/FontColorLogin"
+                android:textSize="20sp" />
+
+
+        <EditText
+                android:id="@+id/editText2"
+                android:layout_width="250dp"
+                android:layout_height="45dp"
+                android:layout_alignLeft="@+id/spinner0"
+                android:layout_below="@+id/editText1"
+                android:maxLength="10"
+                android:layout_marginTop="20dp"
+                android:hint="رقم الهوية"
+                android:layout_alignBaseline="@+id/textView3"
+                android:inputType="number"
+                android:textColor="@color/FontColorLogin"
+                android:textCursorDrawable="@null"
+                android:textSize="20sp" />
+
+        <Button
+                android:id="@+id/search2"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_alignBaseline="@+id/editText2"
+
+                android:layout_toLeftOf="@+id/editText2"
+                android:background="@drawable/search"
+                android:textColor="@color/FontColorLogin" />
+
+        <TextView
+                android:id="@+id/textView34"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@+id/textView1"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/textView3"
+                android:text="رقم الوزارة"
+                android:textColor="@color/FontColorLogin"
+                android:textSize="20sp" />
+
+        <EditText
+                android:id="@+id/editText34"
+                android:layout_width="250dp"
+                android:layout_height="45dp"
+                android:layout_alignLeft="@+id/spinner0"
+                android:layout_below="@+id/editText2"
+                android:maxLength="10"
+                android:layout_marginTop="20dp"
+                android:hint="رقم الوزارة"
+                android:inputType="number"
+                android:layout_alignBaseline="@+id/textView34"
+                android:textColor="@color/FontColorLogin"
+                android:textCursorDrawable="@null"
+                android:textSize="20sp" />
+
+        <Button
+                android:id="@+id/search34"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_alignBaseline="@+id/editText34"
+                android:layout_toLeftOf="@+id/editText34"
+                android:background="@drawable/search"
+                android:textColor="@color/FontColorLogin" />
+
+        <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@+id/textView1"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/textView34"
+                android:text="المنطقة/المدينة"
+                android:textColor="@color/FontColorLogin"
+                android:textSize="20sp" />
+
+
+
+        <Spinner
+                android:id="@+id/spinner1"
+                android:layout_width="150dp"
+                android:layout_height="45dp"
+                android:background="@color/White"
+                android:textColor="@color/FontColorLogin"
+                android:textSize="15sp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:visibility="invisible"
+                android:layout_marginTop="20dp"
+                android:entries="@array/acc_type"
+                android:layout_below="@+id/textView34"
+                android:layout_alignRight="@+id/editText2"/>
+
+
+
+        <Spinner
+                android:id="@+id/spinner2"
+                android:layout_width="150dp"
+                android:background="@color/White"
+                android:textColor="@color/FontColorLogin"
+                android:layout_height="45dp"
+                android:textSize="15sp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:layout_centerVertical="true"
+                android:visibility="invisible"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/textView34"
+                android:layout_toLeftOf="@+id/spinner1"
+                android:layout_marginRight="36dp"/>
+
+        <Button
+                android:id="@+id/line55"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/line"
+                android:layout_marginTop="30dp"
+                android:layout_below="@+id/spinner2"
+                android:layout_alignParentLeft="true"/>
+
+
+
+
+
+        <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/line55"
+                android:layout_marginTop="30dp"
+                android:text="رقم اللوحة"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/FontColorLogin"
+                android:textSize="20sp" />
+
+        <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/textView5"
+                android:layout_marginTop="20dp"
+                android:text="اسم المستخدم"
+                android:textColor="@color/FontColorLogin"
+                android:textSize="20sp" />
+
+
+
+
+        <TextView
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/textView6"
+                android:layout_marginTop="20dp"
+                android:text="إسم المدرسة"
+                android:textColor="@color/FontColorLogin"
+                android:textSize="20sp" />
+
+
+
+        <TextView
+                android:id="@+id/textView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/textView7"
+                android:layout_marginTop="20dp"
+                android:text="العنوان"
+                android:textColor="@color/FontColorLogin"
+                android:textSize="20sp" />
+
+
+
+        <TextView
+                android:id="@+id/textView9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/textView8"
+                android:layout_marginTop="20dp"
+                android:text="إسم السائق"
+                android:textColor="@color/FontColorLogin"
+                android:textSize="20sp" />
+
+
+        <TextView
+                android:id="@+id/textView10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/textView9"
+                android:layout_marginTop="20dp"
+                android:text="رقم الجوال"
+                android:textColor="@color/FontColorLogin"
+                android:textSize="20sp" />
+
+        <TextView
+                android:id="@+id/textView11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/textView10"
+                android:layout_marginTop="20dp"
+                android:text="عدد الطالبات "
+                android:textColor="@color/FontColorLogin"
+                android:textSize="20sp" />
+
+        <TextView
+                android:id="@+id/textView12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/textView11"
+                android:layout_marginTop="20dp"
+                android:text="الملاحظات"
+                android:textColor="@color/FontColorLogin"
+                android:textSize="20sp" />
+
+
+
+        <TextView
+                android:id="@+id/textView13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/textView5"
+                android:layout_alignRight="@+id/editText1"
+                android:gravity="right"
+                android:text=""
+                android:textColor="@color/FontColorLogin"
+                android:textSize="20sp" />
+
+
+        <TextView
+                android:id="@+id/textView14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/textView6"
+                android:layout_alignRight="@+id/editText1"
+                android:gravity="right"
+                android:text=""
+                android:textColor="@color/FontColorLogin"
+                android:textSize="20sp" />
+
+
+
+
+
+
+        <TextView
+                android:id="@+id/textView15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/textView7"
+                android:layout_alignRight="@+id/editText1"
+                android:gravity="right"
+                android:text=""
+                android:textColor="@color/FontColorLogin"
+                android:textSize="20sp" />
+
+
+        <TextView
+                android:id="@+id/textView16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/textView8"
+                android:layout_alignRight="@+id/editText1"
+                android:gravity="right"
+                android:text=""
+                android:textColor="@color/FontColorLogin"
+                android:textSize="20sp" />
+
+        <EditText
+                android:id="@+id/editText3"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_alignTop="@+id/textView9"
+                android:layout_alignRight="@+id/editText1"
+                android:layout_alignBaseline="@+id/textView9"
+                android:gravity="right"
+                android:text=""
+                android:ems="30"
+                android:hint="أسم السائق"
+                android:textColor="@color/FontColorLogin"
+                android:textSize="20sp" />
+
+        <EditText
+                android:id="@+id/editText4"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_alignTop="@+id/textView10"
+                android:layout_alignRight="@+id/editText1"
+                android:gravity="right"
+                android:layout_alignBaseline="@+id/textView10"
+                android:inputType="number"
+                android:hint="رقم الجوال"
+                android:ems="30"
+                android:maxLength="10"
+                android:textColor="@color/FontColorLogin"
+                android:textSize="20sp" />
+
+        <EditText
+                android:id="@+id/editText5"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_alignRight="@+id/editText1"
+                android:layout_alignTop="@+id/textView11"
+                android:ems="30"
+                android:gravity="right"
+                android:maxLength="2"
+                android:layout_alignBaseline="@+id/textView11"
+                android:hint="عدد الطالبات "
+                android:inputType="number"
+                android:textColor="@color/FontColorLogin"
+                android:textCursorDrawable="@null"
+                android:textSize="20sp" />
+
+        <EditText
+                android:id="@+id/editText6"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_alignRight="@+id/editText1"
+
+                android:ems="30"
+                android:gravity="right"
+                android:hint="الملاحظات"
+                android:layout_alignBaseline="@+id/textView12"
+                android:inputType="textMultiLine"
+                android:textColor="@color/FontColorLogin"
+                android:textCursorDrawable="@null"
+                android:textSize="20sp" />
+
+
+
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/buttons"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:background="#333"
+        android:orientation="horizontal" >
+
+        
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="200dp"
+            android:background="@drawable/sync" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/save" /> 
+                    
+    </LinearLayout>
+
+</RelativeLayout>
